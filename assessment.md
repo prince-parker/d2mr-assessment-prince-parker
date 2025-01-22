@@ -11,17 +11,17 @@
 
 ## Basic information
 
-Name:
+Name: 
 
-CNetID:
+CNetID: 
 
 Section:
 
-Mini-project title:
+Mini-project title: Final Project Setup
 
 Submission date:
 
-Project GitHub subdirectory URL:
+Project GitHub subdirectory URL: 
 
 URL or instructions to access additional materials, if needed:
 

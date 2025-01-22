@@ -1,0 +1,22 @@
+---
+title: "Mini Project"
+author: "Prince Parker"
+format: 
+  html:
+    toc: true
+  pdf: 
+    toc: false
+execute: 
+  echo: false
+  warning: false
+editor: source
+---
+
+## employ tidyverse package
+
+```{r employ tidyverse, include=false}
+## employ tidyverse package
+library(tidyverse)
+
+```
+

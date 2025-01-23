@@ -21,7 +21,7 @@ Mini-project title: Hello World Miniproject
 
 Submission date: 1/22/2025
 
-Project GitHub subdirectory URL: 
+Project GitHub subdirectory URL: https://github.com/prince-parker/d2mr-assessment-prince-parker/blob/main/06_r-programming/01_hello-world/Hello%20World%20Miniproject.R
 
 URL or instructions to access additional materials, if needed:
 

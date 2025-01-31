@@ -115,8 +115,8 @@ Below each learning objective is a list of general expectations for meeting that
     2. Runs without error and produces expected output in at least 2 contexts
     3. Functions are well-documented with comments
 
-        -   [x] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [ ] Objective attempt
+        -   [x] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -126,7 +126,7 @@ Below each learning objective is a list of general expectations for meeting that
     2. Uses multiple types of conditional/loop functions (e.g., `if_else()`, `case_when()`, `for`, `while`)
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [x] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 

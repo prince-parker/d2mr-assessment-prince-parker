@@ -26,4 +26,6 @@ hello_world <- function(name, n_greet) {
     }
 } # end hello_world function define
 
-hello_world("Dr. Dowling", 5) # call the function with my name and ask for 5 greetings
+hello_world("Dr. Dowling", 2) # call the function with my name and ask for 5 greetings
+
+

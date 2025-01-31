@@ -447,7 +447,7 @@ Thoughtful reflections may earn engagement points.
 
 
 <!-- Reflection below this line -->
-
+#I initially had some issues with creating the function with the arguments. I soon learned that the name argument did not need any quotation marks because the function assumes a name will be included in this argument once it is created. I also did not understand the n_greet argument, but realized that I needed to continue with the function construction later on to let the code know that this would be a numerical argument entry. If I was to do this mini project again, I would read the instructions in its entirety before trying to follow along while adding code. The most rewarding part of this mini project was successfully running my code! In the future I may need to work with brackets a little more but I am confident this is a minor issue I may run into.
 
 
 

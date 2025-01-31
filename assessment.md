@@ -115,7 +115,7 @@ Below each learning objective is a list of general expectations for meeting that
     2. Runs without error and produces expected output in at least 2 contexts
     3. Functions are well-documented with comments
 
-        -   [ ] Objective attempt
+        -   [x] Objective attempt
         -   [ ] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:

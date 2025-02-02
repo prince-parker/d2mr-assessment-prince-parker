@@ -99,9 +99,22 @@ QUESTIONS:
 
 <!-- answer below -->
 
+a. the messy dataset includes an equation to calculate wt.
+b. the original dataset replaces column names with abbreviated versions
+c. the car model column name is not included in the original data set
+d. the data types are different
+e. the data types are listed in the messy dataset
+
 2. What are the main issues you need to address in cleaning?
 
 <!-- answer below -->
+
+a. data types
+b. rounding
+c. typos
+d. column order
+e. remove the last two columns
+f. remove N/A values
 
 
 
@@ -115,6 +128,7 @@ QUESTIONS:
 
 # Create a dataset to work with during the cleaning process called "clean.mtcars"
 
+clean.mtcars <- messy.mtcars
 
 ```
 
@@ -129,6 +143,10 @@ QUESTIONS:
 # Rename columns to match the original mtcars dataset
 
 
+clean.mtcars <- clean.mtcars %>% rename(mpg=`mpg (Miles/Gallon)`, cyl=cylinders, hp=horsepower, gear=gearbox, carb=carburetors)
+
+colnames(clean.mtcars)[12] <- "model"
+
 ```
 
 ```{r}
@@ -137,6 +155,7 @@ QUESTIONS:
 
 # Reorder columns to match the original mtcars dataset
 
+clean.mtcars <- clean.mtcars %>% relocate(model, mpg, cyl, dsip, hp, drat, wt, qsec, vs, am, gear, carb)
 
 ```
 
@@ -145,6 +164,20 @@ QUESTIONS:
 #| label: correct-data-types
 
 # Correct variable data types
+
+sapply(clean.mtcars, class)
+
+clean.mtcars <- clean.mtcars %>% mutate(mpg=as.numeric(mpg),
+                                         cyl=as.numeric(cyl), 
+                                         dsip=as.numeric(dsip), 
+                                         hp=as.numeric(hp), 
+                                         drat=as.numeric(drat),
+                                         wt=as.numeric(wt), 
+                                         qsec=as.numeric(qsec),
+                                         vs=as.numeric(vs),
+                                         am=as.numeric(am), 
+                                         gear=as.numeric(gear), 
+                                         carb=as.numeric(carb))
 
 ```
 
@@ -166,6 +199,8 @@ Questions:
 
 <!-- answer below -->
 
+There is a length mismatch. Numbers are not rounded. Some values are N/A. 
+
 3. Install (if necessary) and load the `daff` package. In the code chunk below, use the `diff_data()` function to identify the differences between `clean.mtcars` and `goal.mtcars`. 
 
 ```{r}
@@ -183,6 +218,8 @@ Questions:
 How is this method of identifying data discrepancies different from `all.equal()`? Which do you find more helpful at this point?
 
 <!-- answer below -->
+
+Although I am not a pro at reading the rendered data differences, I prefer this chart because it shows exactly where the data differ. I find render diff and data diff to be easier to understand.
 
 ## Clean data values
 
@@ -203,6 +240,9 @@ Identifying specific value problems and cleaning them might take a little creati
 
 # Impute missing values for cyl and hp
 
+clean.mtcars <- clean.mtcars %>%
++     mutate_if(is.numeric, ~ ifelse(is.na(.), mean(., na.rm = TRUE), .))
+
 ```
 
 ```{r}
@@ -210,6 +250,8 @@ Identifying specific value problems and cleaning them might take a little creati
 #| label: round-numeric-values
 
 # Round numeric values
+
+mutate_if(is.numeric, ~ round(. , 3))
 
 ```
 
@@ -220,7 +262,15 @@ Identifying specific value problems and cleaning them might take a little creati
 # Fix typos in model names
 ## Hint: This can be completed with a 6-line mutate() statement
 
-
+clean.mtcars <- clean.mtcars %>% mutate(
++     model = str_replace_all(model, "SportAbout", "Sportabout"),
++     model = str_replace_all(model, "CAdillac", "Cadillac"),
++     model = str_replace_all(model, "ToyotA", "Toyota"),
++     model = str_replace_all(model, "T0yota", "Toyota"),
++     model = str_replace_all(model, "PontiAc Firebird", "Pontiac Firebird"),
++     model = str_replace_all(model, "L0tus", "Lotus"),
++     model = str_replace_all(model, "FerrAri", "Ferrari")
+    )
 
 ```
 
@@ -230,6 +280,9 @@ Identifying specific value problems and cleaning them might take a little creati
 
 # Remove the extra column
 
+clean.mtcars <- clean.mtcars %>% select(-hp_per_cyl)
+
+clean.mtcars <- clean.mtcars[-13]
 
 ```
 
@@ -253,6 +306,7 @@ Questions:
 
 <!-- answer below -->
 
+The only differences in my dataset and `goal.mtcars` are rounding and the N/A values. I was not sure what to impute the N/A with so I went with the mean...this was incorrect. Also, I rounded to the 2nd decimal place rather than the third. Other than those, my dataset is identical according to render diff and diff data.
 
 # Optional Cleaning Tasks
 

@@ -118,7 +118,7 @@ Below each learning objective is a list of general expectations for meeting that
         -   [x] Objective attempt
         -   [ ] Unique objective attempt
         -   [ ] Objective met
-        -   Grader comments:
+        -   Grader comments: The script does not include any user-defined function.
 
 8.  Parse and write conditional statements and/or loops
 
@@ -150,8 +150,8 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [x] Unique objective attempt
-        -   [ ] Objective met
-        -   Grader comments:
+        -   [X] Objective met
+        -   Grader comments: I might have missed it, but it seems that no `tidyr` function is used in the script. I still mark it as met, but make sure you know what functions `tidyr` includes.
 
 11. Use `stringr` functions to work with string variables
 
@@ -160,7 +160,7 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [x] Unique objective attempt
-        -   [ ] Objective met
+        -   [X] Objective met
         -   Grader comments:
 
 12. Use `forcats` functions to work with factor variables
@@ -463,13 +463,13 @@ Example. clean.mtcars <- clean.mtcars[-13]
 
 ## Grader feedback
 
--   Grader:
--   Date:
--   Points toward unique objectives (up to 20):
+-   Grader: Mian
+-   Date: Feb 9, 2025
+-   Points toward unique objectives (up to 20): 4 = 2 (no. 7, 8 in mp1) + 2 (no. 10, 11 in mp2)
 -   Additional points (up to 20):
--   TA provisional engagement points (up to 10):
+-   TA provisional engagement points (up to 10): 6 = 5 + 1
 -   Final approved engagement points (up to 10):
--   Total points (up to 50):
+-   Total points (up to 50): 10 (tentative)
 
 Engagement points are awarded for going above and beyond the expectations of the project and are not guaranteed on any given submission.. Demonstrating the assessed learning objectives earns you points in those categories, but engagement points are awarded for exceptional effort, creativity, or skill.
 
@@ -477,4 +477,5 @@ TAs may recommend engagement points provisionally, but the instructor will make 
 
 Additional comments: 
 
+By Mian: Glad to hear that you were able to work out the project despite all the issues along the way. I believe the process has highlighted the importance of troubleshooting in real-world data cleaning tasks, and I can see your improvement in technical skills and problem-solving abilities.
 

@@ -117,8 +117,8 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [x] Unique objective attempt
-        -   [ ] Objective met
-        -   Grader comments:
+        -   [X] Objective met
+        -   Grader comments: 
 
 8.  Parse and write conditional statements and/or loops
 
@@ -127,8 +127,8 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [x] Unique objective attempt
-        -   [ ] Objective met
-        -   Grader comments:
+        -   [X] Objective met
+        -   Grader comments: The script does not include uses of conditional in dplyr pipelines. I marked the objectibe as met, but just make sure you understand how to use conditional in dplyr pipelines.
 
 ### Tidyverse
 
@@ -460,18 +460,20 @@ Thoughtful reflections may earn engagement points.
 
 ## Grader feedback
 
--   Grader:
--   Date:
--   Points toward unique objectives (up to 20):
+-   Grader: Mian
+-   Date: Feb 9, 2025
+-   Points toward unique objectives (up to 20): 2 (no.7, 8) 
 -   Additional points (up to 20):
--   TA provisional engagement points (up to 10):
+-   TA provisional engagement points (up to 10): 5
 -   Final approved engagement points (up to 10):
--   Total points (up to 50):
+-   Total points (up to 50): 7 (tentative)
 
 Engagement points are awarded for going above and beyond the expectations of the project and are not guaranteed on any given submission.. Demonstrating the assessed learning objectives earns you points in those categories, but engagement points are awarded for exceptional effort, creativity, or skill.
 
 TAs may recommend engagement points provisionally, but the instructor will make the final decision on engagement points.
 
 Additional comments: 
+
+By Mian: Good job! It's great to see how you tackled the challenges of setting up the function arguments and turned those early struggles into a valuable learning experience. 
 
 

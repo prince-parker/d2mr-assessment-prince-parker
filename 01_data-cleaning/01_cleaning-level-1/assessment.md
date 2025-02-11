@@ -465,17 +465,20 @@ Example. clean.mtcars <- clean.mtcars[-13]
 
 -   Grader: Mian
 -   Date: Feb 9, 2025
--   Points toward unique objectives (up to 20): 4 = 2 (no. 7, 8 in mp1) + 2 (no. 10, 11 in mp2)
+-   Points toward unique objectives (up to 20): 2
 -   Additional points (up to 20):
--   TA provisional engagement points (up to 10): 6 = 5 + 1
--   Final approved engagement points (up to 10):
--   Total points (up to 50): 10 (tentative)
+-   TA provisional engagement points (up to 10): 1
+-   Final approved engagement points (up to 10): 1
+-   Total points (up to 50): 3
+ND note: Adjusted the way points are displayed. They now reflect this project's scores only. Your cumulative scores are visible in your grades on Canvas.
 
 Engagement points are awarded for going above and beyond the expectations of the project and are not guaranteed on any given submission.. Demonstrating the assessed learning objectives earns you points in those categories, but engagement points are awarded for exceptional effort, creativity, or skill.
 
 TAs may recommend engagement points provisionally, but the instructor will make the final decision on engagement points.
 
 Additional comments: 
+
+ND: Nice work, Prince! Agree with Mian, I can see the progress you're making in the technical skills, and it's clearly coming from developing debugging and troubleshooting strategies that work for you. 
 
 By Mian: Glad to hear that you were able to work out the project despite all the issues along the way. I believe the process has highlighted the importance of troubleshooting in real-world data cleaning tasks, and I can see your improvement in technical skills and problem-solving abilities.
 

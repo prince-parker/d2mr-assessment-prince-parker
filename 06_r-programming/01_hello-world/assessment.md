@@ -465,7 +465,7 @@ Thoughtful reflections may earn engagement points.
 -   Points toward unique objectives (up to 20): 2 (no.7, 8) 
 -   Additional points (up to 20):
 -   TA provisional engagement points (up to 10): 5
--   Final approved engagement points (up to 10):
+-   Final approved engagement points (up to 10): 5
 -   Total points (up to 50): 7 (tentative)
 
 Engagement points are awarded for going above and beyond the expectations of the project and are not guaranteed on any given submission.. Demonstrating the assessed learning objectives earns you points in those categories, but engagement points are awarded for exceptional effort, creativity, or skill.
